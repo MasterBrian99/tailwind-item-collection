@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.circle-c {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-c-1 {
+  background: #b53a25;
+  background-color: transparent;
+}
+.circle-c-2 {
+  background: #b53a25;
+  background-color: transparent;
+}
+
+.circle-c-3 {
+  background: #b53a25;
+  background-color: transparent;
+}
+.circle-c-4 {
+  background: #b53a25;
+  background-color: transparent;
+}
+
+.main-backdrop {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.575);
+  background-image: radial-gradient(#252525 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-attachment: fixed;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .circle-c-1 {
+    background: #b53a25;
+    clip-path: circle(14% at 70% 65%);
+    position: fixed;
+  }
+  .circle-c-2 {
+    background: #b53a25;
+    clip-path: circle(14% at 10% 5%);
+    position: fixed;
+  }
+  .circle-c-3 {
+    background: #b53a25;
+    clip-path: circle(12% at 70% 15%);
+    position: fixed;
+  }
+  .circle-c-4 {
+    background: #b53a25;
+    clip-path: circle(14% at 10% 55%);
+    position: fixed;
+  }
+
+  .main-backdrop {
+    width: 100%;
+    backdrop-filter: blur(158px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.575);
+    background-image: radial-gradient(#252525 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-attachment: fixed;
+  }
+}
