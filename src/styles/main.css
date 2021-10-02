@@ -71,3 +71,10 @@ body {
     background-attachment: fixed;
   }
 }
+
+.card-item {
+  backdrop-filter: blur(11px) saturate(0%);
+  -webkit-backdrop-filter: blur(11px) saturate(0%);
+  background-color: #161616af;
+  border-radius: 12px;
+}
