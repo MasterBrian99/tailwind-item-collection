@@ -1,19 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HeroIcon from "../../images/background-hero.svg";
+
 const Hero = () => {
   return (
-    <div className="container mx-auto flex justify-between  py-44">
+    <div className="container flex justify-between mx-auto py-44">
       <div className="flex flex-col items-center justify-center">
-        <h2 className="text-7xl text-center px-8 font-bold">
-          Beautiful, fast and modern React UI library.
+        <h2 className="px-8 font-bold text-center text-7xl">
+          Free Tailwind Components with source code
         </h2>
-        <h3>Open source is changing the world – one contribution at a time.</h3>
-        <div className="flex ">
-          <a href="/" className="bg-blue-600 py-2 px-6 shadow-lg rounded-lg">
-            Hello
-          </a>
-          <a href="/" className="bg-blue-600 py-2 px-6 shadow-lg rounded-lg">
-            Hello
+        <h3>Free and Open Source</h3>
+        <div className="flex mt-4 ">
+          <Link
+            to={"/category"}
+            className="px-6 py-2 bg-blue-600 rounded-lg shadow-lg"
+          >
+            Category
+          </Link>
+          <a
+            href="/"
+            className="px-6 py-2 ml-2 bg-gray-500 rounded-lg shadow-lg"
+          >
+            Github
           </a>
         </div>
       </div>

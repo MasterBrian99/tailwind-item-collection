@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Masterbrian99Button from "../containers/Masterbrian99Button/Masterbrian99Button";
 import CategoryScreen from "../screens/CategoryScreen";
 import MainScreen from "../screens/MainScreen";
+import { routeURL } from "./routes";
 
 const Routes = () => {
   return (
@@ -10,7 +10,9 @@ const Routes = () => {
       <Switch>
         <Route path="/" exact component={MainScreen} />
         <Route path="/category" exact component={CategoryScreen} />
-        <Route path="/new" exact component={Masterbrian99Button} />
+        {routeURL.map((el, i) => (
+          <Route key={i} path={el.path} exact component={el.component} />
+        ))}
       </Switch>
     </Router>
   );

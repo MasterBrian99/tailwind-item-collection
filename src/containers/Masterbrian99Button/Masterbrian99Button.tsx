@@ -1,4 +1,3 @@
-import React from "react";
 import { CopyBlock, dracula } from "react-code-blocks";
 import CodeName from "../../components/CodeName/CodeName";
 import Header from "../../components/Header/Header";
@@ -14,7 +13,12 @@ const Masterbrian99Button = () => {
         <div className="container mx-auto">
           <Header />
           <div className="flex flex-col w-full ">
-            <UserCard />
+            <UserCard
+              cardName={"Yellow Button"}
+              githubUserName={"Masterbrian99"}
+              twitterUserName={"Masterbrian99"}
+              username={"Masterbrian"}
+            />
             <div className="flex flex-col items-center justify-center flex-1 my-2 text-black bg-white rounded-lg min-h-30">
               <div>
                 <button className="px-4 py-1 bg-yellow-300 rounded-lg shadow-xl hover:text-white">
@@ -22,7 +26,7 @@ const Masterbrian99Button = () => {
                 </button>
               </div>
             </div>
-            <CodeName />
+            <CodeName name={"JSX"} />
             <div className="my-2 text-black rounded-lg">
               <CopyBlock
                 text={html}
