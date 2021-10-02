@@ -7,8 +7,6 @@ import { html } from "./info";
 const Masterbrian99Button = () => {
   return (
     <div>
-      <div className="circle-c circle-c-1"></div>
-      <div className="circle-c circle-c-2"></div>
       <div className="max-h-full min-h-screen main-backdrop">
         <div className="container mx-auto">
           <Header />

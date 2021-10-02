@@ -61,8 +61,6 @@ npm install
 
 ```tsx
 <div>
-  <div className="circle-c circle-c-1"></div>
-  <div className="circle-c circle-c-2"></div>
   <div className="max-h-full min-h-screen main-backdrop">
     <div className="container mx-auto">
       <Header /> //import the header component
