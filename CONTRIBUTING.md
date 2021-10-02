@@ -93,7 +93,7 @@ npm install
 </div>
 ```
 
-#### create a object in router/routes.ts and import the component you created and the path you want to use.(make sure you are not using the others path)
+#### create a object in router/paths.ts and import the component you created and the path you want to use.(make sure you are not using the others path)
 
 ```ts
 
