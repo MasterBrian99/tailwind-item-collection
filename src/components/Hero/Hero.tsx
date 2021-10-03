@@ -4,13 +4,13 @@ import HeroIcon from "../../images/background-hero.svg";
 
 const Hero = () => {
   return (
-    <div className="container flex justify-between mx-auto py-44">
-      <div className="flex flex-col items-center justify-center">
-        <h2 className="px-8 font-bold text-center text-7xl">
+    <div className=" flex mx-auto w-90w md:w-11/12 flex-col md:flex-row h-90v  ">
+      <div className="flex flex-col items-center justify-center my-10 md:w-1/2">
+        <h2 className="px-8 font-bold text-center text-4v tracking-wide mx-10 ">
           Free Tailwind Components with source code
         </h2>
-        <h3>Free and Open Source</h3>
-        <div className="flex mt-4 ">
+        <h3 className="text-3v md:text-2v m-8">Free and Open Source</h3>
+        <div className="flex">
           <Link
             to={"/category"}
             className="px-6 py-2 bg-blue-600 rounded-lg shadow-lg"
@@ -25,7 +25,9 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <img src={HeroIcon} alt="" className="w-2/5" />
+      <div className='flex w-90w md:w-1/2 mx-auto'>
+        <img src={HeroIcon} alt="" className="w-full" />
+      </div>
     </div>
   );
 };

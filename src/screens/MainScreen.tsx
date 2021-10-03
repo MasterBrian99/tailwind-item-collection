@@ -7,7 +7,7 @@ const MainScreen = () => {
     <div>
       <div className="circle-c circle-c-1"></div>
       <div className="circle-c circle-c-2"></div>
-      <div className="h-screen main-backdrop">
+      <div className="h-100v main-backdrop">
         <Header />
         <Hero />
       </div>
