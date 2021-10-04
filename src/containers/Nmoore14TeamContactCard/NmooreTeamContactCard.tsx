@@ -4,7 +4,7 @@ import Header from "../../components/Header/Header";
 import UserCard from "../../components/UserCard/UserCard";
 import { html } from "./info";
 
-const Masterbrian99Button = () => {
+const Nmoore14TeamContactCard = () => {
   return (
     <div>
       <div className="circle-c circle-c-1"></div>
@@ -84,4 +84,4 @@ const Masterbrian99Button = () => {
   );
 };
 
-export default Masterbrian99Button;
+export default Nmoore14TeamContactCard;
