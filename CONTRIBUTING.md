@@ -61,8 +61,6 @@ npm install
 
 ```tsx
 <div>
-  <div className="circle-c circle-c-1"></div>
-  <div className="circle-c circle-c-2"></div>
   <div className="max-h-full min-h-screen main-backdrop">
     <div className="container mx-auto">
       <Header /> //import the header component
@@ -93,7 +91,7 @@ npm install
 </div>
 ```
 
-#### create a object in router/routes.ts and import the component you created and the path you want to use.(make sure you are not using the others path)
+#### create a object in router/paths.ts and import the component you created and the path you want to use.(make sure you are not using the others path)
 
 ```ts
 
