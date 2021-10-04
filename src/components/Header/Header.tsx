@@ -3,22 +3,19 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-center ">
-      <div className="container flex justify-between py-4 mx-auto">
+      <div className=" w-11/12 h-10v flex justify-between items-center mx-auto">
         <h1 className="text-2xl font-bold">Tailwind Components</h1>
-
         <div>
-          <ul className="flex ">
+          <ul className="flex">
             <Link to={"/"}>
-              <li className="mr-2">Home</li>
+              <li className="mx-4">Home</li>
             </Link>
             <Link to={"/category"}>
-              <li className="mr-2">Category</li>
+              <li className="ml-4">Category</li>
             </Link>
           </ul>
         </div>
       </div>
-    </div>
   );
 };
 
